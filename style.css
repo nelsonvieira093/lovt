@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ropa Sans', sans-serif;
+}
+body{
+    background-color: #00ffff;
+}
+
+header {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    padding: 15px 0;
+
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+header .logo h1 {
+    color: #777777;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0;
+    display: inline-block;
+}
+
+
+header .logo h2 {
+    color: #AAAAAA;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    display: inline-block;
+    width: 70px;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: #AAAAAA;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BANNER */
+
+.banner .carousel>img {
+    width: 100%;
+}
+
+.banner .carousel {
+    position: relative;
+    margin: 50px 0;
+}
+
+.banner .carousel .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .carousel .controls  button img{
+    width: 20px;
+}
+
+.banner .carousel .controls  button{
+    background-color: rgba(170, 170, 170, 0.8);
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+
+/* LOFTS */
+
+.lofts .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.lofts article{
+    width: 350px;
+    background: #EEEEEE;
+}
+
+.cardFirst{
+    background-image: url("/img/project-1.png");
+}
+
+.cardSecond{
+    background-image: url("/img/project-2.png");
+}
+
+.lofts .thumb{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lofts article .info{
+    padding: 15px;
+}
+
+.lofts article .info>div{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.lofts .price{
+    font-size: 30px;
+    color: #888888;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.lofts .tag{
+padding: 3px 15px;
+background-color: #888;
+color: #fff;
+font-size: 25px;
+border-radius: 30px;
+}
+
+.lofts .tag-new{
+    background-color: #51D275;
+}
+
+.lofts .tag-sale{
+    background-color: #DC9730;
+}
+
+/* STYLES */
+
+.firstArticle{
+    background-image: url("/img/industrial.png");
+}
+
+.secondArticle{
+    background-image: url("/img/modern.png");
+}
+
+.thirdArticle{
+    background-image: url("/img/classic.png");
+}
+
+section.styles article{
+    width: 100%;
+    padding: 50px 25px;
+    background-color: #888;
+    margin: 30px 0;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+section.styles{
+    padding: 50px 0;
+}
+
+section.styles h2{
+    font-size: 35px;
+  font-weight: 400;
+  color: #888888;
+  text-align: center;
+}
+section.styles article h3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    font-weight: 400;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer{
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  footer .container .mapa iframe{
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  footer a{
+    color: #fff;
+  }
+
+  footer .social-medias ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  footer .social-medias ul li img{
+    width: 30px;
+    margin: 10px 10px 10px 0;
+  }
+
+  @media (max-width: 545px) {
+    
+.lofts .container{
+    flex-wrap: wrap;
+}
+
+.lofts article{
+    width: 100%;
+}
+
+  }
+
+
+  @media (max-width: 769px) {
+
+footer .container{
+    flex-wrap: wrap;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+footer .container .mapa iframe{
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+footer .container info {
+    text-align: center;
+}
+
+footer .container .info .social-medias ul{
+    justify-content: center
+}
+
+.lofts article{
+    margin: 10px;
+}
+
+.container{
+    padding: 0 15px;
+}
+
+.banner .carousel .controls button{
+    width: 50px;
+    height: 50px;
+}
+
+.banner .carousel .controls button img{
+    width: 15px;
+}
+
+  }
